@@ -1,4 +1,17 @@
 Practice::Application.routes.draw do
+  root :to => 'test_pages#index'
+
+  #index page
+  get "/test_pages", controller: 'test_pages', action: 'index'
+  post "/test_pages", controller: 'test_pages', action: 'create'
+  get "/test_pages/new", controller: 'test_pages', action: 'new'
+  get "/test_pages/:id", controller: 'test_pages', action: 'show'
+  put "/test_pages/:id", controller: 'test_pages', action: 'update'
+  get "/test_pages/:id/edit", controller: 'test_pages', action: 'edit'
+  delete "/test_pages/:id", controller: 'test_pages', action: 'destroy'
+
+
+end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -55,4 +68,3 @@ Practice::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
-end
