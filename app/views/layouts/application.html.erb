@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Practice</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<dl class="dl-horizontal">
-		<dt>Name:</dt>
-		<dd>Sam Sung</dd>
-
-		<dt>Purpose:</dt>
-		<dd>To learn more about the 7 routes and actions that pretty much sum up the entire internet experience, according to Jeff Cohen, our instructor from the Starter League.</dd>
-	</dl>
-
-<%= yield %>
-
-</body>
+	<head>
+	  <title>Practice</title>
+	  <%= stylesheet_link_tag    "application", :media => "all" %>
+	  <%= javascript_include_tag "application" %>
+	  <%= csrf_meta_tags %>
+	</head>
+	<body>
+		<header class="navbar navbar-fixed-top navbar-inverse">
+			<div class="navbar-inner">
+				<div class="container">
+<!-- 				  <%= link_to "Clare", '/test_pages'%> -->
+				  <nav>
+				    <ul class="nav pull-right">
+				      <li><%= link_to "Home",    '/test_pages' %></li>
+				      <li><%= link_to "Create a New Task",    '/test_pages/new' %></li>
+<!-- 				      <li><%= link_to "Sign in", '#' %></li> -->
+<!-- 					  <li><%= link_to "About", '/test_pages/about' %></li> -->
+				    </ul>
+				  </nav>
+				</div>
+			</div>
+		</header>
+	<div class="container">
+	<%= yield %>
+	</div>
+	</body>
 </html>

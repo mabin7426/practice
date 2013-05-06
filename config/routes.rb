@@ -1,14 +1,18 @@
 Practice::Application.routes.draw do
   root :to => 'test_pages#index'
 
-  #index page
-  get "/test_pages", controller: 'test_pages', action: 'index'
-  post "/test_pages", controller: 'test_pages', action: 'create'
-  get "/test_pages/new", controller: 'test_pages', action: 'new'
-  get "/test_pages/:id", controller: 'test_pages', action: 'show'
-  put "/test_pages/:id", controller: 'test_pages', action: 'update'
-  get "/test_pages/:id/edit", controller: 'test_pages', action: 'edit'
-  delete "/test_pages/:id", controller: 'test_pages', action: 'destroy'
+  get "/test_pages/about", controller: 'test_pages', action: 'index' #works
+
+  get "/test_pages", controller: 'test_pages', action: 'index' #works
+  post "/test_pages", controller: 'test_pages', action: 'create' #works
+  get "/test_pages/new", controller: 'test_pages', action: 'new' #works
+
+  get "/test_pages/:id", controller: 'test_pages', action: 'show' #works
+  put "/test_pages/:id", controller: 'test_pages', action: 'update' #works
+
+  get "/test_pages/:id/edit", controller: 'test_pages', action: 'edit' #works
+  
+  delete "/test_pages/:id", controller: 'test_pages', action: 'destroy' #works w/ validation!
 
 
 end

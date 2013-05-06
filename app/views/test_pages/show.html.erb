@@ -1,3 +1,49 @@
 <p><%= link_to "Back", "/test_pages" %></p>
 
-<h1>Show</h1>
+<div class="center hero-unit">
+	<h1>Your Task</h1>
+
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Subject</th>
+				<th>Title</th>
+				<th>Priority</th>
+				<th>Due Date</th>
+				<th>Notes</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><%= @task.subject%></td>
+				<td><%= @task.title%></td>
+				<td><%= @task.priority%></td>
+				<td><%= @task.duedate%></td>
+				<td><%= @task.notes%></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- <p><%= link_to "Delete", "test_pages/#{@task.id}", method: 'delete', data: { confirm: "Are you sure you want to delete this task?" } %> </p>
+
+	<p><%= link_to "Edit", "#{@task.id}/edit" %></p> -->
+
+<!-- 	<h3>Vertical Showing:</h3>
+	<dl class="dl-horizontal">
+		<dt>Subject:</dt>
+		<dd><%= @task.subject%></dd>
+
+		<dt>Title:</dt>
+		<dd><%= @task.title%></dd>
+
+		<dt>Priority:</dt>
+		<dd><%= @task.priority%></dd>
+
+		<dt>Due Date:</dt>
+		<dd><%= @task.duedate%></dd>
+
+		<dt>Notes:</dt>
+		<dd><%= @task.notes%></dd>
+
+	</dl> -->
+</div>

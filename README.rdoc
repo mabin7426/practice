@@ -1,3 +1,66 @@
+*************** 
+My Notes
+***************
+
+QUESTIONS
+1) I don't like how when I update something, I can't just update a few fields, and leaves everything as is (right now it blanks it out).  Have a feeling it's using if statements.  If it's blank, use what was there previously.  Else, use this new input...
+2) How do I change the buttons for the buttons using Twitter Bootstrap?  Need to use a class..
+3) On the home page, why does each task show up??
+
+
+THINGS I WANT TO DO
+1) Make the sorting default by first priority, then due date.  But also clickable to sort it alphabetically (subject, title) or by priority or due date
+2) add a sign in page
+
+
+COMMENTS
+- see Onenote for my step-by-step notes
+- Before naming the input fields for a database, think very carefully!  To change it down the line will be a pain in the butt...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
