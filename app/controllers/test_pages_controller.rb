@@ -1,6 +1,7 @@
 class TestPagesController < ApplicationController
 	
 	def index
+		@task
 	end
 
 	def new
