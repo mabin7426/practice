@@ -20,8 +20,8 @@
 		<%= @tasks.each do |task| %>
 			<tr>
 				<td><%= link_to "Delete", "test_pages/#{task.id}", method: 'delete', data: { confirm: "Are you sure you want to delete this task?" } %></td>
-					
 				<td><%= link_to "Edit", "test_pages/#{task.id}/edit" %></td>
+				
 				<td><%= link_to task.subject, "/test_pages/#{task.id}"%></td>
 				<td><%= link_to task.title, "/test_pages/#{task.id}"%></td>
 				<td><%= link_to task.priority, "/test_pages/#{task.id}"%></td>

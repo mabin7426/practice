@@ -6,6 +6,7 @@ QUESTIONS
 1) I don't like how when I update something, I can't just update a few fields, and leaves everything as is (right now it blanks it out).  Have a feeling it's using if statements.  If it's blank, use what was there previously.  Else, use this new input...
 2) How do I change the buttons for the buttons using Twitter Bootstrap?  Need to use a class..
 3) On the home page, why does each task show up??
+4) What am I supposed to do with seeds.rb?  I just copied it from week4 but not sure if I should have done that....
 
 
 THINGS I WANT TO DO
